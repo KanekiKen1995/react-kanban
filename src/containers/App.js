@@ -5,7 +5,6 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import About from './About/About'
 import Home from './Home/Home'
 import Users from './Users/Users'
 import DropDrap from './DropDrap/DropDrap'
@@ -19,9 +18,6 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
               <Link to="/users">Users</Link>
             </li>
             <li>
@@ -31,12 +27,9 @@ function App() {
         </nav>
         {/* <IntlProvider> */}
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
           <Route path="/users">
             <Users />
-            </Route>
+          </Route>
           <Route path="/dropDrap">
             <DropDrap />
           </Route>
