@@ -8,23 +8,12 @@ import {
 import Home from './Home/Home'
 import Users from './Users/Users'
 import DropDrap from './DropDrap/DropDrap'
+import Menu from '../components/Menu/Menu'
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-            <li>
-              <Link to="/dropDrap">DropDrap</Link>
-            </li>
-          </ul>
-        </nav>
+        <Menu />
         {/* <IntlProvider> */}
         <Switch>
           <Route path="/users">
